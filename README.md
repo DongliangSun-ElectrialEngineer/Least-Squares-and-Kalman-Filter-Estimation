@@ -2,7 +2,7 @@
 ## Least Squares and Kalman Filter Estimation of a Simple Moving Object
 This repository presents the implementation and analysis of Least Squares (LS) and Kalman Filter (KF) algorithms for estimating the state vector of a single-dimensional moving object with constant acceleration in MATLAB, using noisy position measurements provided in the dataset. The state vector consists of initial position y(0), initial velocity v(0), and acceleration a. For the LS method, a batch estimation approach was employed to compute the state vector and smoothed positions, with performance evaluated via root mean squared error (RMSE) against ground truth values. The impact of increasing measurement noise on estimation accuracy was also investigated. The KF was implemented iteratively, starting from a zero initial guess, and tuned to converge toward the ground truth. Matrices sizes, and comparative advantages/disadvantages of both methods are discussed. Results demonstrate that both algorithms provide accurate estimates, with KF offering iterative refinement suitable for real-time applications, while LS excels in simplicity for offline processing. 
 
-![](images/a moving object.png)
+![](images/moving_object.png)
 
 ## Least-Squares estimation
 For LS estimation, the solution for the given data set is:
@@ -18,7 +18,7 @@ $$
 
 Smoothed positions are then $$y^{+} = Hx^{+}$$ 
 
-![](images/noisy position measurements vs. the smoothed measurement.png)
+![](images/smoothed_measurement.png)
 
 ## Kalman Filter Estimation
 The KF was implemented iteratively to estimate $x$ using the same data.  
