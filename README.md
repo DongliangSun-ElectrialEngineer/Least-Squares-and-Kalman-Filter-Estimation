@@ -8,7 +8,7 @@ This project implements and analyzes **Least Squares (LS)** and **Kalman Filter 
 
 The state vector:
 \[
-x = [p(0),\ v(0),\ a]^T
+x = [p(0), v(0), a]^T
 \]
 represents the **initial position**, **initial velocity**, and **acceleration** of the object.  
 
