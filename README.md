@@ -1,4 +1,4 @@
-# Least Squares (LS) and Kalman Filter (KF) Estimation of a Moving Object
+# 🚀 Least Squares and Kalman Filter — State Estimation of a Moving Object
 
 ## 🎯 Overview
 
@@ -6,10 +6,7 @@ This project implements and analyzes **Least Squares (LS)** and **Kalman Filter 
 
 ![](images/moving_object.png)
 
-The state vector:
-\[
-x = [p(0), v(0), a]^T
-\]
+The state vector: $( x = [p(0), v(0), a]^T )$
 represents the **initial position**, **initial velocity**, and **acceleration** of the object.  
 
 Two estimation methods are compared:
@@ -30,13 +27,14 @@ Given the dataset `data_LS.txt`, which includes:
 
 ## 🧩 Task 1 – Least Squares (LS) Estimation
 
+
 ### Objective
-Estimate the state vector \( x = [p(0), v(0), a]^T \) using noisy position measurements \( y \).
+Estimate the state vector $( x = [p(0), v(0), a]^T )$ using noisy position measurements  y .
 
 ### System Model
-\[
+$$
 y(t) = p(0) + v(0)t + \frac{1}{2}at^2
-\]
+$$
 Matrix form:
 \[
 \mathbf{y} = \mathbf{H}\mathbf{x}
